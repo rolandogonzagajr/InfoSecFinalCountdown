@@ -23,20 +23,20 @@
             <h1 class="content">Sample Attack</h1>
 
  <div class="step">
-        <h2> Homepage and the Burp Suite </h2>
+        <h2> Update the system's package list. <strong>sudo apt-get update </strong> </h2>
         <img src="firewall1.png" alt="Burp1" class="screen-fit">
     </div>
             <br>
             <br>
 
     <div class="step">
-        <h2>Add the promo code</h2>
+        <h2>Install the Uncomplicated Firewall (UFW). <strong>sudo apt-get install ufw</strong></h2>
         <img src="Firewall2.png" alt="Burp2" class="screen-fit">
     </div>
   <br>
             <br>
     <div class="step">
-        <h2>Add the same promo code</h2>
+        <h2>Allow incoming TCP connections on port 22 then Enable UFW. <strong>sudo ufw allow 22/tcp</strong> <strong>sudo ufw enable</strong></h2>
         <img src="Firewall3.png" alt="Burp3" class="screen-fit">
     </div>
  <br>
