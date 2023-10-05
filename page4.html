@@ -23,20 +23,27 @@
             <h1 class="content">Steps in SSH Server Installation</h1>
 
  <div class="step">
-        <h2> Install the OpenSSH server package </h2>
+        <h2> Install the OpenSSH server package. sudo apt-get install ssh</h2>
         <img src="SSH1.png" alt="Burp1" class="screen-fit">
     </div>
             <br>
             <br>
+            
+             <div class="step">
+        <h2>Start the OpenSSH server (sudo systemctl start ssh).Print the current user's username (whoami). Then connect to own host (ssh whoami@localhost). Exit</h2>
+        <img src="SSH2.png" alt="Burp2" class="screen-fit">
+    </div>
+  <br>
+            <br>
 
     <div class="step">
-        <h2>Add the promo code</h2>
+        <h2>create a new user account. sudo adduser matti</h2>
         <img src="SSH3.png" alt="Burp2" class="screen-fit">
     </div>
   <br>
             <br>
     <div class="step">
-        <h2>Add the same promo code</h2>
+        <h2>Generate SSH key pairs (ssh-keygen). Then copy (ssh-copy-id whoami@localhost)</h2>
         <img src="SSH4.png" alt="Burp3" class="screen-fit">
     </div>
  <br>
